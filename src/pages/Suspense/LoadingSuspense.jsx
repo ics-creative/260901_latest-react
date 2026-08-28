@@ -1,6 +1,6 @@
 import { Suspense, use, useState } from "react";
-import { Spinner } from "../components/Spinner.jsx";
-import { fetchArticles, fetchUser, fetchUsers } from "../logics/fetchUsers.js";
+import { Spinner } from "../../components/Spinner.jsx";
+import { fetchArticles, fetchUser, fetchUsers } from "./fetchUsers.js";
 
 const UserList = ({ resource, onClick }) => {
   const users = use(resource);

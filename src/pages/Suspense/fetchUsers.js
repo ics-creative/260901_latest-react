@@ -1,12 +1,12 @@
-import icon1 from "../images/icon_1.jpg";
-import icon2 from "../images/icon_2.jpg";
-import icon3 from "../images/icon_3.jpg";
-import icon4 from "../images/icon_4.jpg";
-import icon5 from "../images/icon_5.jpg";
-import icon6 from "../images/icon_6.jpg";
-import icon7 from "../images/icon_7.jpg";
-import icon8 from "../images/icon_8.jpg";
-import { delayedPromise } from "./delayedPromise";
+import icon1 from "../../images/icon_1.jpg";
+import icon2 from "../../images/icon_2.jpg";
+import icon3 from "../../images/icon_3.jpg";
+import icon4 from "../../images/icon_4.jpg";
+import icon5 from "../../images/icon_5.jpg";
+import icon6 from "../../images/icon_6.jpg";
+import icon7 from "../../images/icon_7.jpg";
+import icon8 from "../../images/icon_8.jpg";
+import { delayedPromise } from "../../logics/delayedPromise";
 
 const users = [
   {

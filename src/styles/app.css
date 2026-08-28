@@ -308,6 +308,68 @@
   }
 }
 
+/* --- Optimistic ---*/
+
+.optimistic {
+  width: min(100%, 480px);
+  margin-inline: auto;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.optimistic__user {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.optimistic__avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.optimistic__post-image {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+}
+
+.optimistic__body {
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.optimistic__controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.optimistic__like-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+
+  &[aria-pressed="true"] img {
+    filter: invert(20%) sepia(95%) saturate(5000%) hue-rotate(335deg);
+  }
+}
+
+.optimistic__likes {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.optimistic__status {
+  color: var(--color-text-muted);
+}
+
 .compare-grid,
 .activity-grid {
   display: grid;

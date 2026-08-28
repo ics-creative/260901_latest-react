@@ -25,7 +25,7 @@ export const NoTransition = () => {
   };
 
   const handleQuantityChange = async (event) => {
-    const nextQuantity = Number(event.target.value)
+    const nextQuantity = Number(event.target.value);
     setQuantity(nextQuantity);
     setTotal(await calculateTotal(color, size, nextQuantity));
   };

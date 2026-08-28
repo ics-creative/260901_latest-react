@@ -33,7 +33,7 @@ export const Transition = () => {
   };
 
   const handleQuantityChange = (event) => {
-    const nextQuantity = Number(event.target.value)
+    const nextQuantity = Number(event.target.value);
     setQuantity(nextQuantity);
     startTransition(async () => {
       // 時間がかかる計算処理はstartTransitionを使う

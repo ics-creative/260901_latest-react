@@ -313,8 +313,13 @@
 .optimistic {
   width: min(100%, 480px);
   margin-inline: auto;
-  border: 1px solid var(--color-border);
+
   background: var(--color-white);
+}
+
+.optimistic-article {
+  border: 1px solid var(--color-border);
+  margin-bottom: 24px;
 }
 
 .optimistic__user {
@@ -366,8 +371,17 @@
   font-weight: bold;
 }
 
-.optimistic__status {
-  color: var(--color-text-muted);
+.optimistic-labels {
+  display: grid;
+  gap: 8px;
+  span {
+    font-weight: bold;
+    color: var(--color-text-muted);
+  }
+
+  span.is-liked {
+    color: var(--color-primary);
+  }
 }
 
 .compare-grid,

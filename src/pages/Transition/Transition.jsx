@@ -20,7 +20,11 @@ export const Transition = () => {
     setColor(nextColor);
     startTransition(async () => {
       // 時間がかかる計算処理はstartTransitionを使う
-      setTotal(await calculateTotal(nextColor, size, quantity));
+      const calculated = await calculateTotal(nextColor, size, quantity);
+      startTransition(() => {
+        // 再度startTransitionでstateを更新
+        setTotal(calculated);
+      });
     });
   };
 
@@ -28,7 +32,11 @@ export const Transition = () => {
     setSize(nextSize);
     startTransition(async () => {
       // 時間がかかる計算処理はstartTransitionを使う
-      setTotal(await calculateTotal(color, nextSize, quantity));
+      const calculated = await calculateTotal(color, nextSize, quantity);
+      startTransition(() => {
+        // 再度startTransitionでstateを更新
+        setTotal(calculated);
+      });
     });
   };
 
@@ -36,8 +44,12 @@ export const Transition = () => {
     const nextQuantity = Number(event.target.value);
     setQuantity(nextQuantity);
     startTransition(async () => {
+      const calculated = await calculateTotal(color, size, nextQuantity);
       // 時間がかかる計算処理はstartTransitionを使う
-      setTotal(await calculateTotal(color, size, nextQuantity));
+      startTransition(() => {
+        // 再度startTransitionでstateを更新
+        setTotal(calculated);
+      });
     });
   };
 

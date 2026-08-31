@@ -4,23 +4,23 @@ import { ProfileDetail } from "./ProfileDetail.jsx";
 
 const UserList = ({ onSelect }) => (
   <section>
-    <ul className="user-list">
+    <ul className="vt-user-list">
       {users.map((user) => (
         <li key={user.id}>
           <ViewTransition name={`user-card-${user.id}`}>
             <button
-              className="user-list__button"
+              className="vt-user-list__button"
               onClick={() => onSelect(user)}
               type="button"
             >
               <img
                 alt=""
-                className="user-list__image"
+                className="vt-user-list__image"
                 height="40"
                 src={user.image}
                 width="40"
               />
-              <span className="user-list__copy">
+              <span className="vt-user-list__copy">
                 <strong>{user.name}</strong>
                 <small>{user.role}</small>
               </span>

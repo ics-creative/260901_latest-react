@@ -468,7 +468,7 @@ button.optimistic__like-button {
   padding: 40px;
 }
 
-.user-list {
+.vt-user-list {
   width: 100%;
   height: auto;
   display: grid;
@@ -477,7 +477,7 @@ button.optimistic__like-button {
   list-style: none;
 }
 
-button.user-list__button {
+button.vt-user-list__button {
   width: 100%;
   min-height: 64px;
   padding: 12px;
@@ -498,7 +498,7 @@ button.user-list__button {
   }
 }
 
-.user-list__image {
+.vt-user-list__image {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
@@ -506,7 +506,7 @@ button.user-list__button {
   object-fit: cover;
 }
 
-.user-list__copy {
+.vt-user-list__copy {
   min-width: 0;
   display: grid;
   flex: 1;

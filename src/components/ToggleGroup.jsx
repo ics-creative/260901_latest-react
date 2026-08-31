@@ -8,7 +8,9 @@ export const ToggleGroup = ({ label, options, value, onChange }) => (
           key={option.value}
           onClick={() => onChange(option.value)}
           type="button"
-          className={value === option.value && "active"}
+          className={["toggle-group__item", value === option.value && "active"]
+            .filter(Boolean)
+            .join(" ")}
         >
           {option.label}
         </button>

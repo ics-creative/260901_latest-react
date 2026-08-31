@@ -8,7 +8,7 @@ import icon7 from "../../images/icon_7.jpg";
 import icon8 from "../../images/icon_8.jpg";
 import { delayedPromise } from "../../logics/delayedPromise";
 
-const users = [
+export const users = [
   {
     id: 1,
     name: "Misaki Sato",

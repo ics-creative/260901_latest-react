@@ -16,7 +16,7 @@ const SearchResults = ({ resource, isSearching }) => {
         {people.map((person) => (
           <li className="search-results__list-item" key={person.id}>
             <span>{person.name}</span>
-            <span>{person.team}</span>
+            <span className="search-results__list-team">{person.team}</span>
           </li>
         ))}
       </ul>

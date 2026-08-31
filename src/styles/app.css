@@ -341,6 +341,17 @@ button.user-list__button {
   }
 }
 
+.search-results__list-item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.search-results__list-team {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
 /* --- Optimistic ---*/
 
 .optimistic {

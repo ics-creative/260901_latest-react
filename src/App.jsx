@@ -5,7 +5,7 @@ import { Home } from "./pages/Home.jsx";
 import { Optimistic } from "./pages/Optimistic/Optimistic.jsx";
 import { LoadingSuspense } from "./pages/Suspense/LoadingSuspense.jsx";
 import { TransitionPage } from "./pages/Transition/TransitionPage.jsx";
-import { ViewTransition } from "./pages/ViewTransition.jsx";
+import { ViewTransitionPage } from "./pages/ViewTransition/ViewTransitionPage.jsx";
 
 /**
  * アプリケーションのルート定義を描画します。
@@ -19,7 +19,7 @@ export const App = () => (
       <Route element={<DeferredPage />} path="/deferred" />
       <Route element={<Optimistic />} path="/optimistic" />
       <Route element={<ActivityPage />} path="/activity" />
-      <Route element={<ViewTransition />} path="/view-transition" />
+      <Route element={<ViewTransitionPage />} path="/view-transition" />
       <Route element={<Navigate replace to="/" />} path="*" />
     </Routes>
   </main>

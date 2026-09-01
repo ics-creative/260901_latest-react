@@ -11,8 +11,8 @@ import { productColors, productSizes } from "./productVariants.js";
 export const NoTransition = () => {
   const [color, setColor] = useState("black");
   const [size, setSize] = useState("M");
-  const [quantity, setQuantity] = useState(0);
-  const [total, setTotal] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const [total, setTotal] = useState(2700);
 
   const handleColorChange = async (nextColor) => {
     setColor(nextColor);

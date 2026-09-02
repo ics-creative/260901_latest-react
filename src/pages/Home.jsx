@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router";
 
 const pages = [
   { path: "/suspense", label: "Suspense" },
@@ -6,7 +6,6 @@ const pages = [
   { path: "/deferred", label: "useDeferredValue" },
   { path: "/optimistic", label: "useOptimistic" },
   { path: "/activity", label: "Activity" },
-  { path: "/view-transition", label: "ViewTransition" },
 ];
 
 /**
@@ -16,7 +15,7 @@ export const Home = () => (
   <ul className="home">
     {pages.map((page) => (
       <li key={page.path}>
-        <Link to={page.path}>{page.label}</Link>
+        <NavLink to={page.path}>{page.label}</NavLink>
       </li>
     ))}
   </ul>

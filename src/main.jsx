@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { ActivityPage } from "./pages/Activity/ActivityPage";
 import { DeferredPage } from "./pages/Deferred/DeferredPage";
@@ -13,7 +13,7 @@ import "./styles/app.css";
 
 const siteTitle = "Improve User Experience with React";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (

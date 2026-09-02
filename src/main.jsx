@@ -11,7 +11,7 @@ import { TransitionPage } from "./pages/Transition/TransitionPage";
 import "./styles/base.css";
 import "./styles/app.css";
 
-const siteTitle = "Improve User Experience with React";
+const siteTitle = "React - Improve UX";
 
 const router = createHashRouter([
   {

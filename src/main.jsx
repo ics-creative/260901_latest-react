@@ -11,30 +11,62 @@ import { TransitionPage } from "./pages/Transition/TransitionPage";
 import "./styles/base.css";
 import "./styles/app.css";
 
+const siteTitle = "Improve User Experience with React";
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <title>{siteTitle}</title>
+        <Home />
+      </>
+    ),
   },
   {
     path: "/suspense",
-    element: <LoadingSuspense />,
+    element: (
+      <>
+        <title>{`${siteTitle} | Suspense`}</title>
+        <LoadingSuspense />
+      </>
+    ),
   },
   {
     path: "/transition",
-    element: <TransitionPage />,
+    element: (
+      <>
+        <title>{`${siteTitle} | useTransition`}</title>
+        <TransitionPage />
+      </>
+    ),
   },
   {
     path: "/deferred",
-    element: <DeferredPage />,
+    element: (
+      <>
+        <title>{`${siteTitle} | useDeferredValue`}</title>
+        <DeferredPage />
+      </>
+    ),
   },
   {
     path: "/optimistic",
-    element: <Optimistic />,
+    element: (
+      <>
+        <title>{`${siteTitle} | useOptimistic`}</title>
+        <Optimistic />
+      </>
+    ),
   },
   {
     path: "/activity",
-    element: <ActivityPage />,
+    element: (
+      <>
+        <title>{`${siteTitle} | Activity`}</title>
+        <ActivityPage />
+      </>
+    ),
   },
 ]);
 

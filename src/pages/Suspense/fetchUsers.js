@@ -176,7 +176,7 @@ export const fetchUser = (userId) =>
 export const fetchArticles = (userId) => {
   const offset = Math.floor(Math.random() * articles.length) + userId;
   const selectedArticles = Array.from(
-    { length: 3 },
+    { length: 2 },
     (_, index) => articles[(offset + index) % articles.length],
   );
 

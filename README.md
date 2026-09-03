@@ -1,11 +1,11 @@
-ICS MEDIA『最近のReactで変わる画面実装』のサンプルコードです。
+ICS MEDIA『useStateとuseEffectだけじゃもったいない！ ユーザー体験を改善するReactの便利機能』のサンプルコードです。
 
 以下のURLからデモを確認できます。
 
 1. [Suspenseによるローディング](https://ics-creative.github.io/260901_latest-react/#/suspense)
 2. [useTransitionによるUIのブロック回避](https://ics-creative.github.io/260901_latest-react/#/transition)
 3. [useDeferredValueによる遅延更新](https://ics-creative.github.io/260901_latest-react/#/deferred)
-4. [useOptimisticとuseActionStateによる楽観的更新](https://ics-creative.github.io/260901_latest-react/#/optimistic)
+4. [useOptimisticによる楽観的更新](https://ics-creative.github.io/260901_latest-react/#/optimistic)
 5. [Activityによる状態保持](https://ics-creative.github.io/260901_latest-react/#/activity)
 
 ## 使用したアイコン画像
